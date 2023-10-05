@@ -1,0 +1,337 @@
+* {
+      padding: 0%;
+      margin: 0%;
+}
+
+body {
+
+      color: white;
+
+}
+
+#main {
+
+      display: flex;
+      height: 100vh;
+
+}
+
+
+#chats {
+
+      background-color: #202020;
+      width: 16%;
+      position: relative;
+      
+}
+
+/* área de botones */
+#botones {
+
+      display: flex;
+      padding-top: 15px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      
+         
+}
+
+.boton {
+
+      padding: 10px;
+      border: 1px solid gray; /* Borde de 1 píxel de ancho, estilo "solid" (línea sólida), color blanco (#ffffff) */
+      margin: 5px;
+      border-radius: 6px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#nueva-conversacion {
+
+      display: flex;
+      justify-content: left;
+      padding-right: 55px;
+
+}
+
+#preguntas {
+
+      background-color: #40414f;
+      width: 100%;
+      height: 100vh;
+      /* Para colocar el input hasta abajo*/
+      position: relative;
+}
+
+#preguntas input{
+
+      background-color: #40414f;
+      color: white;
+      border: none;
+      box-shadow: 0px 5px 10px rgba(0.5, 0.5, 0.5, 0.5); 
+      padding: 20px 50px 20px 20px;
+      width: 700px;
+
+}
+
+#preguntas input:focus {
+
+      outline: none;
+
+}
+
+.icon-container {
+
+      position: absolute;
+      right: 10%;
+      cursor: pointer;
+}
+
+#footer {
+      
+      
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); 
+      padding-bottom: 10px;
+      
+}
+
+.input {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 15px;
+            
+}
+
+.info-small {
+
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#opciones-contenedor {
+
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+
+}
+
+#opciones {
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+}
+
+.opciones-chat {
+
+      border: 1px solid gray;
+      border-radius: 10px;
+      padding: 10px;
+      
+}
+
+#opciones :hover {
+
+      background-color: #343541;
+      cursor: pointer;
+
+}
+
+.opciones-chat p {
+
+      font-size: 12px;
+      padding-left: 15px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.opciones-chat .strong {
+
+      font-weight: 600;
+}
+
+.versiones {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+}
+
+.versiones button {
+
+      padding: 12px 50px 12px 50px;
+      background-color: #40414f;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 10px;
+      display: flex;
+      border-color: #202020;
+      
+      
+}
+.versiones p {
+
+      padding-left: 5px;
+      padding-right: 5px;
+}
+
+.versiones svg {
+
+      width: 15px;
+      color: gray;
+
+}
+
+#contenedor-ventanas {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.ventana {
+
+      background-color: #202020;
+      color: white;
+      padding: 15px;
+      margin-top: 5px;
+      border-radius: 8px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 14px;
+      
+
+}
+
+.ventana button {
+
+      background-color: rgb(140, 47, 228);
+      margin-top: 15px;
+      border-radius: 8px;
+      padding: 10px;
+      width: 100%;
+      color: white;
+      font-weight: 600;
+      border: none;
+
+}
+
+/* Es aquí donde se generan las respuestas */
+#seccion-respuestas {
+
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding-top: 20px;
+      margin-top: 50px;
+      margin-left: 350px;
+      margin-right: 350px;
+      height: 750px;
+      overflow: auto;
+      line-height: 1.5;
+      text-align: justify;
+
+      padding-right: 10px;
+
+}
+
+#seccion-respuestas h1 {
+
+      color: gray;
+      text-align: center;
+
+}
+
+/*Configuración del perfil*/
+
+#perfil {
+
+      position: absolute;
+      bottom: 0;
+
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 14px;
+      border-top: 1px solid gray ;
+      left: 15%;
+      transform: translateX(-5%); 
+
+}
+
+#perfil span {
+
+      background-color: yellow;
+      color: #202020;
+      padding: 2px;
+      border-radius: 5px;
+
+}
+
+#perfil img{
+
+      width: 20px;
+      
+}
+
+.perfil-usuario {
+
+      padding-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding-bottom: 15px;
+
+}
+
+/* área donde se guardarán las conversaciones */
+.conversaciones {
+      
+      padding: 20px;
+}
+
+.conversaciones p {
+
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 14px;
+      padding-bottom: 35px;
+
+}
+
+.prompt {
+
+      background-color: #343541;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      content: 100%;
+      padding-left: 20px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+
+}
+
+/* Contenedor pequeño de las conversaciones*/
+
+.contenedor-conversaciones {
+
+      display: flex;
+      gap: 5px;
+      cursor: pointer;
+      
+}
+.contenedor-conversaciones:hover {
+
+      background-color: #343541;
+      height: 30px;
+      padding-left: 10px;
+      padding-top: 10px;
+}
+
+
